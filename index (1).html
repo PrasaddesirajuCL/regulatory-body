@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharma Regulatory Links</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-image: url('pharma-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      min-height: 100vh;
+    }
+    h1 {
+      color: #333;
+      margin-bottom: 20px;
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 10px 20px;
+      border-radius: 8px;
+    }
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      width: 100%;
+      max-width: 1000px;
+    }
+    .link-box {
+      background-color: rgba(255, 255, 255, 0.9);
+      border-radius: 12px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .link-box:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+    .link-box a {
+      text-decoration: none;
+      color: #0066cc;
+      font-weight: bold;
+      font-size: 18px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>Pharma Regulatory Websites</h1>
+  <div class="container">
+    <div class="link-box"><a href="https://www.ich.org/" target="_blank">ICH - International Council for Harmonisation</a></div>
+    <div class="link-box"><a href="https://www.who.int/" target="_blank">WHO - World Health Organization</a></div>
+    <div class="link-box"><a href="https://www.fda.gov/" target="_blank">FDA - US Food & Drug Administration</a></div>
+    <div class="link-box"><a href="https://www.ema.europa.eu/" target="_blank">EMA - European Medicines Agency</a></div>
+    <div class="link-box"><a href="https://www.mhra.gov.uk/" target="_blank">MHRA - UK Medicines and Healthcare Products</a></div>
+    <div class="link-box"><a href="https://cdsco.gov.in/" target="_blank">CDSCO - Central Drugs Standard Control Organization (India)</a></div>
+    <div class="link-box"><a href="https://www.pmda.go.jp/english/" target="_blank">PMDA - Pharmaceuticals and Medical Devices Agency (Japan)</a></div>
+    <div class="link-box"><a href="https://www.tga.gov.au/" target="_blank">TGA - Therapeutic Goods Administration (Australia)</a></div>
+    <div class="link-box"><a href="https://www.healthcanada.gc.ca/" target="_blank">Health Canada</a></div>
+  </div>
+</body>
+</html>
