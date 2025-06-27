@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pharma Regulatory Hub</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('pharma-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #ffffff;
+    }
+    header {
+      background-color: rgba(0, 0, 0, 0.75);
+      padding: 10px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 10px;
+    }
+    nav a {
+      color: #00ccff;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: rgba(255, 255, 255, 0.1);
+      padding: 8px 12px;
+      border-radius: 6px;
+    }
+    nav a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .section {
+      display: none;
+      margin: 40px auto;
+      max-width: 1000px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      border-radius: 10px;
+    }
+    .section.active {
+      display: block;
+    }
+    .section h2 {
+      text-align: center;
+      color: #00ffff;
+    }
+    .subsection {
+      margin-top: 20px;
+    }
+    .subsection h3 {
+      color: #ffd700;
+    }
+    .subsection a {
+      display: block;
+      color: #87cefa;
+      margin: 6px 0;
+      text-decoration: underline;
+    }
+    .welcome {
+      text-align: center;
+      padding: 80px 20px;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+    .welcome h1 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .welcome p {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Pharma Regulatory Hub</h1>
+    <nav>
+      <a href="#" onclick="showSection('usfda')">USFDA</a>
+      <a href="#" onclick="showSection('ich')">ICH</a>
+      <a href="#" onclick="showSection('ema')">EMA</a>
+      <a href="#" onclick="showSection('cdsco')">CDSCO</a>
+    </nav>
+  </header>
+
+  <div class="welcome">
+    <h1>Welcome to the Pharma Regulatory Hub</h1>
+    <p>Explore key global regulatory websites, guidelines, and updates from authorities like USFDA, ICH, EMA, CDSCO, and more.</p>
+  </div>
+
+  <div id="usfda" class="section">
+    <h2>USFDA</h2>
+    <div class="subsection">
+      <h3>Important Links</h3>
+      <a href="https://www.fda.gov/" target="_blank">FDA Homepage</a>
+      <a href="https://www.fda.gov/inspections-compliance-enforcement-and-criminal-investigations/compliance-actions-and-activities/warning-letters" target="_blank">Warning Letters</a>
+      <a href="https://www.fda.gov/regulatory-information/search-fda-guidance-documents" target="_blank">Regulatory Guidelines</a>
+    </div>
+  </div>
+
+  <div id="ich" class="section">
+    <h2>ICH</h2>
+    <div class="subsection">
+      <h3>Important Links</h3>
+      <a href="https://www.ich.org/" target="_blank">ICH Homepage</a>
+      <a href="https://www.ich.org/page/quality-guidelines" target="_blank">Quality Guidelines (Q Series)</a>
+      <a href="https://www.ich.org/page/efficacy-guidelines" target="_blank">Efficacy Guidelines (E Series)</a>
+    </div>
+  </div>
+
+  <div id="ema" class="section">
+    <h2>EMA</h2>
+    <div class="subsection">
+      <h3>Important Links</h3>
+      <a href="https://www.ema.europa.eu/en" target="_blank">EMA Homepage</a>
+      <a href="https://www.ema.europa.eu/en/news" target="_blank">EMA News</a>
+      <a href="https://www.ema.europa.eu/en/documents" target="_blank">EMA Documents</a>
+    </div>
+  </div>
+
+  <div id="cdsco" class="section">
+    <h2>CDSCO</h2>
+    <div class="subsection">
+      <h3>Important Links</h3>
+      <a href="https://cdsco.gov.in/" target="_blank">CDSCO Homepage</a>
+      <a href="https://cdsco.gov.in/opencms/opencms/en/Notifications/" target="_blank">Notifications</a>
+      <a href="https://cdsco.gov.in/opencms/opencms/en/Drugs/Guidelines/" target="_blank">CDSCO Guidelines</a>
+    </div>
+  </div>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section').forEach(el => el.classList.remove('active'));
+      document.getElementById(id).classList.add('active');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
