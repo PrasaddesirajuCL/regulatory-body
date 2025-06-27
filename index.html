@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pharma Regulatory Links</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('pharma-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: relative;
+    }
+
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.1);
+      z-index: -1;
+    }
+
+    .top-bar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 10px 20px;
+    }
+
+    .reg-link {
+      background-color: rgba(255, 255, 255, 0.95);
+      border-radius: 10px;
+      padding: 10px 18px;
+      text-align: center;
+      color: #007BFF;
+      font-size: 18px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+
+    .reg-link:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    .content {
+      background-color: rgba(255, 255, 255, 0.85);
+      padding: 40px 30px;
+      margin: 30px auto;
+      border-radius: 12px;
+      max-width: 900px;
+      color: #333;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="top-bar">
+    <a class="reg-link" href="https://www.ich.org/" target="_blank">ICH</a>
+    <a class="reg-link" href="https://www.who.int/" target="_blank">WHO</a>
+    <a class="reg-link" href="https://www.fda.gov/" target="_blank">FDA</a>
+    <a class="reg-link" href="https://www.ema.europa.eu/" target="_blank">EMA</a>
+    <a class="reg-link" href="https://www.mhra.gov.uk/" target="_blank">MHRA</a>
+    <a class="reg-link" href="https://cdsco.gov.in/" target="_blank">CDSCO</a>
+    <a class="reg-link" href="https://www.pmda.go.jp/english/" target="_blank">PMDA</a>
+    <a class="reg-link" href="https://www.tga.gov.au/" target="_blank">TGA</a>
+    <a class="reg-link" href="https://www.healthcanada.gc.ca/" target="_blank">Health Canada</a>
+  </div>
+
+  <div class="content">
+    <p>
+      Regulatory authorities across the globe play a crucial role in the pharmaceutical and healthcare ecosystem.
+      They are tasked with monitoring compliance, setting safety standards, and approving new medical products 
+      to protect public health. These agencies ensure that pharmaceutical companies follow ethical research 
+      practices, use standardized manufacturing procedures, and distribute products that meet strict safety 
+      and efficacy criteria.
+    </p>
+
+    <p>
+      For example, the U.S. Food and Drug Administration (FDA) oversees drug and vaccine approvals in the 
+      United States, while the European Medicines Agency (EMA) handles similar functions across the European Union.
+      In India, the Central Drugs Standard Control Organization (CDSCO) ensures drugs meet Indian quality standards 
+      before reaching the market. Other major regulators include Japan’s PMDA, Australia’s TGA, and Canada’s 
+      Health Canada.
+    </p>
+
+    <p>
+      These agencies also collaborate globally on harmonizing regulations to streamline international drug 
+      approvals, promote public health initiatives, and respond quickly to global health emergencies. Their 
+      decisions are informed by scientific research, clinical trials, and risk assessments to make sure that 
+      patients get safe and effective treatments.
+    </p>
+
+    <p>
+      In today's interconnected world, the importance of regulatory bodies has never been more evident. From 
+      pandemic response to daily approvals of life-saving treatments, these organizations help maintain trust, 
+      safety, and consistency in health systems worldwide.
+    </p>
+  </div>
+</body>
+</html>
