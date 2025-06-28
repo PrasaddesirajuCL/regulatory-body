@@ -1,0 +1,122 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pharma Regulatory Menu</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-image: url('pharma-bg.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      position: relative;
+    }
+    body::before {
+      content: "";
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background-color: rgba(255, 255, 255, 0.25);
+      z-index: -1;
+    }
+    .navbar {
+      background-color: rgba(255, 255, 255, 0.9);
+      display: flex;
+      padding: 12px 20px;
+      align-items: center;
+      gap: 20px;
+    }
+    .nav-item {
+      position: relative;
+      font-weight: bold;
+      font-size: 18px;
+      background-color: rgba(240, 240, 240, 0.9);
+      border-radius: 10px;
+      padding: 5px 10px;
+    }
+    .nav-link {
+      color: #007BFF;
+      text-decoration: none;
+      padding: 8px 12px;
+      display: block;
+      border-radius: 6px;
+      transition: background 0.3s;
+    }
+    .nav-link:hover {
+      background-color: rgba(0, 123, 255, 0.1);
+    }
+    .dropdown {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: rgba(255, 255, 255, 0.95);
+      min-width: 220px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      border-radius: 8px;
+      z-index: 10;
+    }
+    .dropdown a {
+      padding: 10px 15px;
+      display: block;
+      text-decoration: none;
+      color: #007BFF;
+      font-size: 16px;
+    }
+    .dropdown a:hover {
+      background-color: rgba(0, 123, 255, 0.1);
+    }
+    .nav-item:hover .dropdown {
+      display: block;
+    }
+    .content {
+      max-width: 900px;
+      background-color: rgba(255, 255, 255, 0.85);
+      margin: 30px auto;
+      padding: 30px;
+      border-radius: 10px;
+      font-size: 18px;
+      line-height: 1.7;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="nav-item">
+      <a class="nav-link" href="#">Regulatory Bodies ▾</a>
+      <div class="dropdown">
+        <a href="https://www.ich.org/" target="_blank">ICH</a>
+        <a href="https://www.who.int/" target="_blank">WHO</a>
+        <a href="fda.html" target="_blank">FDA</a>
+        <a href="https://www.ema.europa.eu/" target="_blank">EMA</a>
+        <a href="https://www.mhra.gov.uk/" target="_blank">MHRA</a>
+        <a href="https://cdsco.gov.in/" target="_blank">CDSCO</a>
+        <a href="https://www.pmda.go.jp/english/" target="_blank">PMDA</a>
+        <a href="https://www.tga.gov.au/" target="_blank">TGA</a>
+        <a href="https://www.healthcanada.gc.ca/" target="_blank">Health Canada</a>
+      </div>
+    </div>
+    <div class="nav-item"><a class="nav-link" href="#">Posts</a></div>
+    <div class="nav-item"><a class="nav-link" href="#">Contact</a></div>
+  </div>
+
+  <div class="content">
+    <p>
+      Regulatory authorities are vital in ensuring that all pharmaceutical products meet the necessary safety,
+      efficacy, and quality standards before reaching the public.
+    </p>
+    <p>
+      Their decisions affect how medicines are tested, approved, labeled, and distributed,
+      ultimately shaping the quality of healthcare worldwide.
+    </p>
+  </div>
+</body>
+</html>
